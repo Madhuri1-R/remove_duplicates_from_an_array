@@ -3,7 +3,7 @@ def remove_duplicates(arr):
        return[]
     unique = [arr[0]]
     for i in range(1, len(arr)):
-        if arr[i] != arr[i+1]:
+        if arr[i] != arr[i-1]:
            unique.append(arr[i])
     return unique
 n = int(input("Enter the number of elements:"))
